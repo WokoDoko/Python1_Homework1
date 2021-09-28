@@ -4,11 +4,11 @@ duration = int(input('Input time period in SEC.'))
 if duration < 60:
     print(duration) # получаем секунды
 elif 60 <= duration < 3600:
-    print('Введенное количество секунд: {minutes} минут, {seconds} секунд.'.format(minutes = duration//60,seconds = duration%60)) #получаем минуты
+    print('Введенное количество секунд: {minutes} минут, {seconds} секунд.'.format(minutes = duration//60,seconds = duration%60)) #получаем минуты и секунды
 elif 3600 <= duration < 86400:
-    print('Введенное количество секунд: {hours} часов, {minutes} минут, {seconds} секунд.'.format(hours=duration//3600, minutes=(duration % 3600) // 60, seconds=(duration % 3600) % 60)) #получаем часы
+    print('Введенное количество секунд: {hours} часов, {minutes} минут, {seconds} секунд.'.format(hours=duration//3600, minutes=(duration % 3600) // 60, seconds=(duration % 3600) % 60)) #получаем часы, мин, сек
 else:
-    print('Введенное количество секунд: {days} суток, {hours} часов, {minutes} минут, {seconds} секунд.'.format(days=duration // 86400, hours=(duration % 86400)//3600, minutes=((duration % 86400) % 3600) // 60, seconds=((duration % 86400) % 3600) % 60)) #получаем дни
+    print('Введенное количество секунд: {days} суток, {hours} часов, {minutes} минут, {seconds} секунд.'.format(days=duration // 86400, hours=(duration % 86400)//3600, minutes=((duration % 86400) % 3600) // 60, seconds=((duration % 86400) % 3600) % 60)) #получаем дни, часы, минуты и секунды
 
 # Третье задание
 
